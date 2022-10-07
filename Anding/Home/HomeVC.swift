@@ -9,5 +9,8 @@ import Foundation
 import UIKit
 
 class HomeVC :UIViewController{
+    override func viewDidLoad() {
+        print("test1")
+    }
     
 }
