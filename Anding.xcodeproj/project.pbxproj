@@ -26,6 +26,13 @@
 		D0D0FB5B28EE7E4B007A1E6D /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB5A28EE7E4A007A1E6D /* MyPageVC.swift */; };
 		D0D0FB5D28EE7E6A007A1E6D /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB5C28EE7E6A007A1E6D /* FeedVC.swift */; };
 		D0D0FB5F28EE7E80007A1E6D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB5E28EE7E80007A1E6D /* HomeVC.swift */; };
+		D0D0FB6C28F1701C007A1E6D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB6A28F1701C007A1E6D /* HomeCollectionViewCell.swift */; };
+		D0D0FB6D28F1701C007A1E6D /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D0FB6B28F1701C007A1E6D /* HomeCollectionViewCell.xib */; };
+		D0D0FB7128F199A2007A1E6D /* QfirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB7028F199A2007A1E6D /* QfirstVC.swift */; };
+		D0D0FB7328F199E2007A1E6D /* QfirstVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D0FB7228F199E2007A1E6D /* QfirstVC.storyboard */; };
+		D0D0FB7528F1EEA6007A1E6D /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB7428F1EEA6007A1E6D /* Topic.swift */; };
+		D0D0FB7928F1F25C007A1E6D /* QSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB7828F1F25C007A1E6D /* QSecondVC.swift */; };
+		D0D0FB7B28F1F282007A1E6D /* QSecondVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D0FB7A28F1F282007A1E6D /* QSecondVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,13 @@
 		D0D0FB5A28EE7E4A007A1E6D /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		D0D0FB5C28EE7E6A007A1E6D /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		D0D0FB5E28EE7E80007A1E6D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D0D0FB6A28F1701C007A1E6D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0D0FB6B28F1701C007A1E6D /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		D0D0FB7028F199A2007A1E6D /* QfirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QfirstVC.swift; sourceTree = "<group>"; };
+		D0D0FB7228F199E2007A1E6D /* QfirstVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QfirstVC.storyboard; sourceTree = "<group>"; };
+		D0D0FB7428F1EEA6007A1E6D /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		D0D0FB7828F1F25C007A1E6D /* QSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSecondVC.swift; sourceTree = "<group>"; };
+		D0D0FB7A28F1F282007A1E6D /* QSecondVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QSecondVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +128,13 @@
 			children = (
 				D0D0FB5E28EE7E80007A1E6D /* HomeVC.swift */,
 				D0D0FB4C28EE7C4B007A1E6D /* HomeVC.storyboard */,
+				D0D0FB6A28F1701C007A1E6D /* HomeCollectionViewCell.swift */,
+				D0D0FB6B28F1701C007A1E6D /* HomeCollectionViewCell.xib */,
+				D0D0FB7028F199A2007A1E6D /* QfirstVC.swift */,
+				D0D0FB7228F199E2007A1E6D /* QfirstVC.storyboard */,
+				D0D0FB7828F1F25C007A1E6D /* QSecondVC.swift */,
+				D0D0FB7A28F1F282007A1E6D /* QSecondVC.storyboard */,
+				D0D0FB7428F1EEA6007A1E6D /* Topic.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -217,8 +238,11 @@
 				D0D0FB5328EE7CED007A1E6D /* BookVC.storyboard in Resources */,
 				D0D0FB4228EE73A0007A1E6D /* Assets.xcassets in Resources */,
 				D0D0FB4D28EE7C4B007A1E6D /* HomeVC.storyboard in Resources */,
+				D0D0FB7B28F1F282007A1E6D /* QSecondVC.storyboard in Resources */,
 				D0D0FB4F28EE7C76007A1E6D /* FeedVC.storyboard in Resources */,
 				4E72869328EF523E00A7BD58 /* LoginVC.storyboard in Resources */,
+				D0D0FB6D28F1701C007A1E6D /* HomeCollectionViewCell.xib in Resources */,
+				D0D0FB7328F199E2007A1E6D /* QfirstVC.storyboard in Resources */,
 				D0D0FB5528EE7CFA007A1E6D /* MyPageVC.storyboard in Resources */,
 				D0D0FB3D28EE739D007A1E6D /* Main.storyboard in Resources */,
 			);
@@ -237,7 +261,11 @@
 				D0D0FB5F28EE7E80007A1E6D /* HomeVC.swift in Sources */,
 				4E72869528EF524B00A7BD58 /* LoginVC.swift in Sources */,
 				D0D0FB3A28EE739D007A1E6D /* ViewController.swift in Sources */,
+				D0D0FB6C28F1701C007A1E6D /* HomeCollectionViewCell.swift in Sources */,
+				D0D0FB7128F199A2007A1E6D /* QfirstVC.swift in Sources */,
+				D0D0FB7528F1EEA6007A1E6D /* Topic.swift in Sources */,
 				D0D0FB5D28EE7E6A007A1E6D /* FeedVC.swift in Sources */,
+				D0D0FB7928F1F25C007A1E6D /* QSecondVC.swift in Sources */,
 				D0D0FB5B28EE7E4B007A1E6D /* MyPageVC.swift in Sources */,
 				D0D0FB3628EE739D007A1E6D /* AppDelegate.swift in Sources */,
 				D0D0FB3828EE739D007A1E6D /* SceneDelegate.swift in Sources */,
