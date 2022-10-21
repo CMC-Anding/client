@@ -16,6 +16,10 @@
 		4E4E80F128F5CFF400140ED0 /* SignUp3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4E80F028F5CFF400140ED0 /* SignUp3VC.swift */; };
 		4E72869328EF523E00A7BD58 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E72869228EF523E00A7BD58 /* LoginVC.storyboard */; };
 		4E72869528EF524B00A7BD58 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72869428EF524B00A7BD58 /* LoginVC.swift */; };
+		4EF32549290284DF00B4E118 /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 4EF32548290284DF00B4E118 /* Home */; };
+		4EF325512902850A00B4E118 /* Archive in Resources */ = {isa = PBXBuildFile; fileRef = 4EF325502902850A00B4E118 /* Archive */; };
+		4EF325532902856B00B4E118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF325522902856B00B4E118 /* Main.storyboard */; };
+		4EF325552902857100B4E118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF325542902857100B4E118 /* ViewController.swift */; };
 		4EF4B85528FE7E0D003478BB /* MyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF4B85428FE7E0D003478BB /* MyVC.storyboard */; };
 		4EF4B85728FE7E1D003478BB /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4B85628FE7E1D003478BB /* MyVC.swift */; };
 		4EF4B85A28FEB61D003478BB /* ProfileVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF4B85928FEB61D003478BB /* ProfileVC.storyboard */; };
@@ -38,6 +42,12 @@
 		4E4E80F028F5CFF400140ED0 /* SignUp3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3VC.swift; sourceTree = "<group>"; };
 		4E72869228EF523E00A7BD58 /* LoginVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
 		4E72869428EF524B00A7BD58 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4EF32548290284DF00B4E118 /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Home; sourceTree = "<group>"; };
+		4EF3254E290284FE00B4E118 /* FeedVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedVC.storyboard; sourceTree = "<group>"; };
+		4EF3254F290284FE00B4E118 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		4EF325502902850A00B4E118 /* Archive */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Archive; sourceTree = "<group>"; };
+		4EF325522902856B00B4E118 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4EF325542902857100B4E118 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EF4B85428FE7E0D003478BB /* MyVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyVC.storyboard; sourceTree = "<group>"; };
 		4EF4B85628FE7E1D003478BB /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 		4EF4B85928FEB61D003478BB /* ProfileVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileVC.storyboard; sourceTree = "<group>"; };
@@ -102,6 +112,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		4EF3254D290284FE00B4E118 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3254E290284FE00B4E118 /* FeedVC.storyboard */,
+				4EF3254F290284FE00B4E118 /* FeedVC.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		4EF4B85328FE7DDB003478BB /* My */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +179,9 @@
 			children = (
 				D0D0FB3528EE739D007A1E6D /* AppDelegate.swift */,
 				D0D0FB3728EE739D007A1E6D /* SceneDelegate.swift */,
+				4EF32548290284DF00B4E118 /* Home */,
+				4EF325502902850A00B4E118 /* Archive */,
+				4EF3254D290284FE00B4E118 /* Feed */,
 				4E72869128EF520A00A7BD58 /* Login */,
 				4E45809B28F2983900B4DD19 /* SignUp1 */,
 				4E45809C28F2987500B4DD19 /* SignUp2 */,
@@ -168,6 +190,8 @@
 				4EF4B85828FEB5F1003478BB /* Profile */,
 				D0D0FB4628EE73A0007A1E6D /* Info.plist */,
 				D0D0FB4128EE73A0007A1E6D /* Assets.xcassets */,
+				4EF325522902856B00B4E118 /* Main.storyboard */,
+				4EF325542902857100B4E118 /* ViewController.swift */,
 				D0D0FB4328EE73A0007A1E6D /* LaunchScreen.storyboard */,
 				D0D0FB3E28EE739D007A1E6D /* Anding.xcdatamodeld */,
 				4E2465D028F6A20700DC7870 /* UserData.swift */,
@@ -240,9 +264,12 @@
 				D0D0FB4528EE73A0007A1E6D /* LaunchScreen.storyboard in Resources */,
 				D0D0FB4228EE73A0007A1E6D /* Assets.xcassets in Resources */,
 				4E4E80EF28F5CFE300140ED0 /* SignUp3VC.storyboard in Resources */,
+				4EF325532902856B00B4E118 /* Main.storyboard in Resources */,
 				4EF4B85A28FEB61D003478BB /* ProfileVC.storyboard in Resources */,
 				4E72869328EF523E00A7BD58 /* LoginVC.storyboard in Resources */,
 				4E45809F28F298CB00B4DD19 /* SignUp1VC.storyboard in Resources */,
+				4EF32549290284DF00B4E118 /* Home in Resources */,
+				4EF325512902850A00B4E118 /* Archive in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +326,7 @@
 				D0D0FB4028EE739D007A1E6D /* Anding.xcdatamodeld in Sources */,
 				4EF4B85728FE7E1D003478BB /* MyVC.swift in Sources */,
 				4E2465D128F6A20700DC7870 /* UserData.swift in Sources */,
+				4EF325552902857100B4E118 /* ViewController.swift in Sources */,
 				4E4E80F128F5CFF400140ED0 /* SignUp3VC.swift in Sources */,
 				4E72869528EF524B00A7BD58 /* LoginVC.swift in Sources */,
 				4E4E80ED28F576A100140ED0 /* SignUp2VC.swift in Sources */,
