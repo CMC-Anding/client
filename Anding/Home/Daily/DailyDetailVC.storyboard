@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Daily DetailVC-->
+        <scene sceneID="DFE-1J-iy9">
+            <objects>
+                <viewController storyboardIdentifier="DailyDetailVC" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YmE-bY-8uC" customClass="DailyDetailVC" customModule="Anding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PCM-1z-zy7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBl-Vd-YmG">
+                                <rect key="frame" x="0.0" y="74" width="414" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="257" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT7-fn-goe">
+                                        <rect key="frame" x="20" y="0.0" width="14" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="941-xT-aCl"/>
+                                            <constraint firstAttribute="height" constant="22" id="Z00-H4-hU2"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_back"/>
+                                        <connections>
+                                            <action selector="close:" destination="Ccm-dC-1A6" eventType="touchUpInside" id="s1f-0b-z5C"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sU6-G6-C5z">
+                                        <rect key="frame" x="159" y="0.0" width="92" height="20.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="세부">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="16" name="SFProDisplay-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="정보">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="16" name="SFProDisplay-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="추가">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sU6-G6-C5z" firstAttribute="top" secondItem="rBl-Vd-YmG" secondAttribute="top" id="1Ow-Dh-yhI"/>
+                                    <constraint firstItem="lT7-fn-goe" firstAttribute="top" secondItem="rBl-Vd-YmG" secondAttribute="top" id="C56-BS-V49"/>
+                                    <constraint firstItem="lT7-fn-goe" firstAttribute="leading" secondItem="rBl-Vd-YmG" secondAttribute="leading" constant="20" id="bhc-g6-5ak"/>
+                                    <constraint firstAttribute="height" constant="20" id="mGM-c6-lgo"/>
+                                    <constraint firstItem="sU6-G6-C5z" firstAttribute="leading" secondItem="rBl-Vd-YmG" secondAttribute="leading" constant="159" id="nPO-Ir-M9J"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZ8-NJ-HgJ" userLabel="테이블뷰">
+                                <rect key="frame" x="0.0" y="110" width="414" height="752"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="skY-UY-YHu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                        <color key="backgroundColor" red="0.094117634000000006" green="0.094117634000000006" blue="0.094117634000000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="138" id="otr-Nw-Y3g"/>
+                                        </constraints>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0a-00-8fo">
+                                        <rect key="frame" x="16" y="666" width="382" height="56"/>
+                                        <color key="backgroundColor" red="0.48769205809999999" green="0.45160382989999998" blue="0.96475297209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="hzd-Wo-iVI"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="dynamic">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="문답 저장하기">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="QsaveBtn:" destination="YmE-bY-8uC" eventType="touchUpInside" id="1ug-eM-YD9"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-Kn-j8R" userLabel="feedshare">
+                                        <rect key="frame" x="0.0" y="138" width="414" height="391"/>
+                                        <subviews>
+                                            <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4a-tz-uuq">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="S17-Dx-SvI"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="external-link" translatesAutoresizingMaskIntoConstraints="NO" id="50a-Qw-Cs2">
+                                                <rect key="frame" x="16" y="30" width="24" height="25"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-Ec-bQ7">
+                                                <rect key="frame" x="60" y="20" width="101.5" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGB-iv-Krs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="14.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="공유">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" metaFont="cellTitle"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=" ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="여부">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" metaFont="cellTitle"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=" ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDD-K1-P1k">
+                                                        <rect key="frame" x="0.0" y="22.5" width="101.5" height="19.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="피드에">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" metaFont="system" size="16"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=" ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="공유하기">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" metaFont="system" size="16"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="lGB-iv-Krs" firstAttribute="top" secondItem="gcm-Ec-bQ7" secondAttribute="top" id="5vT-4r-GnK"/>
+                                                    <constraint firstItem="lGB-iv-Krs" firstAttribute="leading" secondItem="gcm-Ec-bQ7" secondAttribute="leading" id="vG3-da-d6S"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_check_off" translatesAutoresizingMaskIntoConstraints="NO" id="vXV-ES-SBK">
+                                                <rect key="frame" x="374" y="27" width="24" height="24"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.092759154740000002" green="0.092759154740000002" blue="0.092759154740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="gcm-Ec-bQ7" firstAttribute="top" secondItem="YFV-Kn-j8R" secondAttribute="top" constant="20" id="DA2-xz-QoO"/>
+                                            <constraint firstItem="gcm-Ec-bQ7" firstAttribute="leading" secondItem="50a-Qw-Cs2" secondAttribute="trailing" constant="20" id="G0q-Og-GnC"/>
+                                            <constraint firstAttribute="trailing" secondItem="F4a-tz-uuq" secondAttribute="trailing" id="Hvf-4i-BHl"/>
+                                            <constraint firstAttribute="trailing" secondItem="vXV-ES-SBK" secondAttribute="trailing" constant="16" id="KTh-eL-xXx"/>
+                                            <constraint firstItem="F4a-tz-uuq" firstAttribute="top" secondItem="YFV-Kn-j8R" secondAttribute="top" id="Kst-xN-98C"/>
+                                            <constraint firstItem="vXV-ES-SBK" firstAttribute="top" secondItem="YFV-Kn-j8R" secondAttribute="top" constant="27" id="SWg-cj-krf"/>
+                                            <constraint firstItem="F4a-tz-uuq" firstAttribute="leading" secondItem="YFV-Kn-j8R" secondAttribute="leading" id="X3d-du-Mgc"/>
+                                            <constraint firstItem="50a-Qw-Cs2" firstAttribute="top" secondItem="YFV-Kn-j8R" secondAttribute="top" constant="30" id="Xuz-BR-ADE"/>
+                                            <constraint firstItem="50a-Qw-Cs2" firstAttribute="leading" secondItem="YFV-Kn-j8R" secondAttribute="leading" constant="16" id="rZa-Lo-k4W"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.094117634000000006" green="0.094117634000000006" blue="0.094117634000000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YFV-Kn-j8R" secondAttribute="bottom" constant="223" id="FQk-Pi-Lh5"/>
+                                    <constraint firstItem="skY-UY-YHu" firstAttribute="top" secondItem="bZ8-NJ-HgJ" secondAttribute="top" id="HbD-cN-0xo"/>
+                                    <constraint firstItem="skY-UY-YHu" firstAttribute="leading" secondItem="YFV-Kn-j8R" secondAttribute="leading" id="O1v-ky-dii"/>
+                                    <constraint firstItem="skY-UY-YHu" firstAttribute="centerX" secondItem="X0a-00-8fo" secondAttribute="centerX" id="P8t-2d-5Ue"/>
+                                    <constraint firstItem="X0a-00-8fo" firstAttribute="leading" secondItem="bZ8-NJ-HgJ" secondAttribute="leading" constant="16" id="PN2-X3-Q2t"/>
+                                    <constraint firstItem="YFV-Kn-j8R" firstAttribute="leading" secondItem="bZ8-NJ-HgJ" secondAttribute="leading" id="S2E-uN-Z3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="X0a-00-8fo" secondAttribute="trailing" constant="16" id="Wco-FM-quF"/>
+                                    <constraint firstItem="YFV-Kn-j8R" firstAttribute="top" secondItem="skY-UY-YHu" secondAttribute="bottom" id="Xk1-bp-duU"/>
+                                    <constraint firstAttribute="bottom" secondItem="X0a-00-8fo" secondAttribute="bottom" constant="30" id="aBQ-4K-oKO"/>
+                                    <constraint firstItem="skY-UY-YHu" firstAttribute="trailing" secondItem="YFV-Kn-j8R" secondAttribute="trailing" id="hGG-qN-jdF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZLA-9N-fHM"/>
+                        <color key="backgroundColor" red="0.24338889120000001" green="0.25047931080000002" blue="0.27843505140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rBl-Vd-YmG" firstAttribute="leading" secondItem="ZLA-9N-fHM" secondAttribute="leading" id="3cr-MH-Jru"/>
+                            <constraint firstItem="bZ8-NJ-HgJ" firstAttribute="top" secondItem="rBl-Vd-YmG" secondAttribute="bottom" constant="16" id="7pm-kc-rpD"/>
+                            <constraint firstItem="bZ8-NJ-HgJ" firstAttribute="leading" secondItem="ZLA-9N-fHM" secondAttribute="leading" id="EDg-EU-XyL"/>
+                            <constraint firstItem="ZLA-9N-fHM" firstAttribute="trailing" secondItem="bZ8-NJ-HgJ" secondAttribute="trailing" id="Yzy-pX-Tbr"/>
+                            <constraint firstItem="rBl-Vd-YmG" firstAttribute="top" secondItem="ZLA-9N-fHM" secondAttribute="top" constant="30" id="ai8-DF-4eo"/>
+                            <constraint firstItem="ZLA-9N-fHM" firstAttribute="bottom" secondItem="bZ8-NJ-HgJ" secondAttribute="bottom" id="hW0-rR-ZMS"/>
+                            <constraint firstItem="ZLA-9N-fHM" firstAttribute="trailing" secondItem="rBl-Vd-YmG" secondAttribute="trailing" id="ikO-hi-MLo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="QsaveBtn" destination="X0a-00-8fo" id="TEY-So-den"/>
+                        <outlet property="checkBox" destination="vXV-ES-SBK" id="AKo-7l-NML"/>
+                        <outlet property="shareArea" destination="YFV-Kn-j8R" id="5F9-32-Lhb"/>
+                        <outlet property="tableView" destination="skY-UY-YHu" id="IYl-LK-bTq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igM-QS-ikl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ccm-dC-1A6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-872" y="13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="external-link" width="24" height="25"/>
+        <image name="ic_back" width="12" height="22"/>
+        <image name="p_check_off" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
