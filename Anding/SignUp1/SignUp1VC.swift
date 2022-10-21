@@ -125,7 +125,7 @@ class SignUp1VC: UIViewController, UITextFieldDelegate  {
                     // obj(Any)를 JSON으로 변경
                     let dataJson = try JSONSerialization.data(withJSONObject: obj, options: .prettyPrinted)
                    
-                    let getData = try JSONDecoder().decode(SameId.self, from: dataJson)
+                    let getData = try JSONDecoder().decode(SameIdNickName.self, from: dataJson)
                     print(getData)
                         
                     if getData.code == 1001 {

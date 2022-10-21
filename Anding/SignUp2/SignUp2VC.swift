@@ -25,7 +25,11 @@ class SignUp2VC: UIViewController, UITextFieldDelegate {
 //    var isTimerRunning = false
     
     @IBOutlet weak var nickNameLbl: UILabel!
+    
     @IBOutlet weak var nickNameCheckLbl: UILabel!
+    
+    
+    
     @IBOutlet weak var validationCodeTimerLbl: UILabel!
     @IBOutlet weak var incorrectNumberLbl: UILabel!
     
@@ -99,7 +103,7 @@ class SignUp2VC: UIViewController, UITextFieldDelegate {
                 // obj(Any)를 JSON으로 변경
                 let dataJson = try JSONSerialization.data(withJSONObject: obj, options: .prettyPrinted)
                
-                let getData = try JSONDecoder().decode(SameId.self, from: dataJson)
+                let getData = try JSONDecoder().decode(SameIdNickName.self, from: dataJson)
                 print(getData)
                     
                 if getData.code == 1002 {

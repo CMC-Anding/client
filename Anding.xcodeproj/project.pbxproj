@@ -16,6 +16,10 @@
 		4E4E80F128F5CFF400140ED0 /* SignUp3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4E80F028F5CFF400140ED0 /* SignUp3VC.swift */; };
 		4E72869328EF523E00A7BD58 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E72869228EF523E00A7BD58 /* LoginVC.storyboard */; };
 		4E72869528EF524B00A7BD58 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72869428EF524B00A7BD58 /* LoginVC.swift */; };
+		4EF4B85528FE7E0D003478BB /* MyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF4B85428FE7E0D003478BB /* MyVC.storyboard */; };
+		4EF4B85728FE7E1D003478BB /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4B85628FE7E1D003478BB /* MyVC.swift */; };
+		4EF4B85A28FEB61D003478BB /* ProfileVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF4B85928FEB61D003478BB /* ProfileVC.storyboard */; };
+		4EF4B85C28FEB62D003478BB /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4B85B28FEB62D003478BB /* ProfileVC.swift */; };
 		D0D0FB3628EE739D007A1E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB3528EE739D007A1E6D /* AppDelegate.swift */; };
 		D0D0FB3828EE739D007A1E6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB3728EE739D007A1E6D /* SceneDelegate.swift */; };
 		D0D0FB4028EE739D007A1E6D /* Anding.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0D0FB3E28EE739D007A1E6D /* Anding.xcdatamodeld */; };
@@ -34,6 +38,10 @@
 		4E4E80F028F5CFF400140ED0 /* SignUp3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3VC.swift; sourceTree = "<group>"; };
 		4E72869228EF523E00A7BD58 /* LoginVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
 		4E72869428EF524B00A7BD58 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4EF4B85428FE7E0D003478BB /* MyVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyVC.storyboard; sourceTree = "<group>"; };
+		4EF4B85628FE7E1D003478BB /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
+		4EF4B85928FEB61D003478BB /* ProfileVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileVC.storyboard; sourceTree = "<group>"; };
+		4EF4B85B28FEB62D003478BB /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		6AE6EE022E0032101AC50ECB /* Pods-Anding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anding.release.xcconfig"; path = "Target Support Files/Pods-Anding/Pods-Anding.release.xcconfig"; sourceTree = "<group>"; };
 		CAD8BE21E7591F9AFABD7358 /* Pods-Anding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anding.debug.xcconfig"; path = "Target Support Files/Pods-Anding/Pods-Anding.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D0FB3228EE739D007A1E6D /* Anding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anding.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +102,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		4EF4B85328FE7DDB003478BB /* My */ = {
+			isa = PBXGroup;
+			children = (
+				4EF4B85428FE7E0D003478BB /* MyVC.storyboard */,
+				4EF4B85628FE7E1D003478BB /* MyVC.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		4EF4B85828FEB5F1003478BB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4EF4B85928FEB61D003478BB /* ProfileVC.storyboard */,
+				4EF4B85B28FEB62D003478BB /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		BBBA242D59A34A418AFEDBE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,9 +164,11 @@
 				4E45809B28F2983900B4DD19 /* SignUp1 */,
 				4E45809C28F2987500B4DD19 /* SignUp2 */,
 				4E45809D28F2988900B4DD19 /* SignUp3 */,
+				4EF4B85328FE7DDB003478BB /* My */,
+				4EF4B85828FEB5F1003478BB /* Profile */,
+				D0D0FB4628EE73A0007A1E6D /* Info.plist */,
 				D0D0FB4128EE73A0007A1E6D /* Assets.xcassets */,
 				D0D0FB4328EE73A0007A1E6D /* LaunchScreen.storyboard */,
-				D0D0FB4628EE73A0007A1E6D /* Info.plist */,
 				D0D0FB3E28EE739D007A1E6D /* Anding.xcdatamodeld */,
 				4E2465D028F6A20700DC7870 /* UserData.swift */,
 			);
@@ -208,9 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4E80EB28F5769300140ED0 /* SignUp2VC.storyboard in Resources */,
+				4EF4B85528FE7E0D003478BB /* MyVC.storyboard in Resources */,
 				D0D0FB4528EE73A0007A1E6D /* LaunchScreen.storyboard in Resources */,
 				D0D0FB4228EE73A0007A1E6D /* Assets.xcassets in Resources */,
 				4E4E80EF28F5CFE300140ED0 /* SignUp3VC.storyboard in Resources */,
+				4EF4B85A28FEB61D003478BB /* ProfileVC.storyboard in Resources */,
 				4E72869328EF523E00A7BD58 /* LoginVC.storyboard in Resources */,
 				4E45809F28F298CB00B4DD19 /* SignUp1VC.storyboard in Resources */,
 			);
@@ -265,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF4B85C28FEB62D003478BB /* ProfileVC.swift in Sources */,
 				D0D0FB4028EE739D007A1E6D /* Anding.xcdatamodeld in Sources */,
+				4EF4B85728FE7E1D003478BB /* MyVC.swift in Sources */,
 				4E2465D128F6A20700DC7870 /* UserData.swift in Sources */,
 				4E4E80F128F5CFF400140ED0 /* SignUp3VC.swift in Sources */,
 				4E72869528EF524B00A7BD58 /* LoginVC.swift in Sources */,
@@ -417,7 +449,7 @@
 				INFOPLIST_FILE = Anding/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = LoginVC;
+				INFOPLIST_KEY_UIMainStoryboardFile = MyVC;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -447,7 +479,7 @@
 				INFOPLIST_FILE = Anding/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = LoginVC;
+				INFOPLIST_KEY_UIMainStoryboardFile = MyVC;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

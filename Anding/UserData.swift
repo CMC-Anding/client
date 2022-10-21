@@ -20,7 +20,7 @@ struct Result: Codable {
     let nickname: String?
 }
 
-struct SameId: Codable {
+struct SameIdNickName: Codable {
     let code: Int?
     let message: String?
     let nickname: String?
@@ -34,11 +34,16 @@ struct SignUp: Codable {
     let userId: String?
 }
 
+struct ModifyUserProfile: Codable {
+    let code: Int?
+}
+
 struct Login: Codable {
     let code: Int?
     let message: String?
     let result: Result
 }
+
 
 
 
