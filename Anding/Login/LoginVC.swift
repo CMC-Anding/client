@@ -11,9 +11,9 @@ import Alamofire
 
 class LoginVC: UIViewController, UITextFieldDelegate {
 
-    let logoImg = UIImage(named: "logo.svg")
-    let lineImg = UIImage(named: "line.svg")
-    let warnImg = UIImage(named: "warn.svg")
+    private let logoImg = UIImage(named: "logo.svg")
+    private let lineImg = UIImage(named: "line.svg")
+    private let warnImg = UIImage(named: "warn.svg")
     
     let loginUrl = "https://dev.joeywrite.shop/app/users/login"
     
@@ -31,8 +31,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
         logo.image = logoImg
         warn.image = warnImg
-        line1.image = lineImg
-        line2.image = lineImg
+//        line1.image = lineImg
+//        line2.image = lineImg
         
         id.delegate = self
         id.layer.cornerRadius = 6
@@ -55,7 +55,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         guard let userId = id.text else { return }
         guard let userPw = pw.text else { return }
         let params: Parameters = ["password" : userPw, "userId" : userId]
-        
+
         AF.request(loginUrl,
                    method: .post,
                    parameters: params,
@@ -63,44 +63,48 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                    headers: ["Content-Type":"application/json", "Accept":"application/json"])
             .validate(statusCode: 200..<300)
             .responseJSON { response in
-                
+
             switch response.result {
                 case .success(let obj):
                 print(obj)
-                
+
                 do {
                 // obj(Any)를 JSON으로 변경
                 let dataJson = try JSONSerialization.data(withJSONObject: obj, options: .prettyPrinted)
-               
+
                 let getData = try JSONDecoder().decode(Login.self, from: dataJson)
-                
+
                 print(getData)
-                    
+
                 if getData.code == 1000 {
-    
-                    guard let token = getData.result.jwt else { return }
+
+                    guard let token = getData.result?.jwt else { return }
                     UserDefaults.standard.setValue(token, forKey: "token")
-                    
-                    guard let nickName = getData.result.nickname
+
+                    guard let nickName = getData.result?.nickname
                     else { return }
+                    
+                    print("👻로그인",nickName)
                     UserDefaults.standard.setValue(nickName, forKey: "nickName")
                     
-                    //  로그인 성공 시 홈화면으로 이동
-                    //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    //        let mainTabBarController = storyboard.instantiateViewController(identifier: "TabBarController")
-                    //
-                    //        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
-                }
-                    
-                if getData.code == 2000 || getData.code == 3014 {
 
+                // 로그인 성공시 홈 화면으로 이동
+
+                    let main = UIStoryboard(name: "Main", bundle: nil)
+                    let mainTabBarController = main.instantiateViewController(identifier: "TabBarController")
+
+                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+                }
+
+                if getData.code == 2000 || getData.code == 3014 {
                     self.warn.isHidden = false
                     self.reWriteWarnLbl.isHidden = false
                 }
-             
+
                 } catch let DecodingError.dataCorrupted(context) {
                     print(context)
                 } catch let DecodingError.keyNotFound(key, context) {
+
                     print("Key '\(key)' not found:", context.debugDescription)
                     print("codingPath:", context.codingPath)
                 } catch let DecodingError.valueNotFound(value, context) {
@@ -112,7 +116,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 } catch {
                     print("error: ", error)
                 }
-            
+
                 case .failure(let e):
                     // 통신 실패
                     print(e.localizedDescription)

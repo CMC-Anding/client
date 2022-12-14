@@ -24,9 +24,33 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
-        
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
 
+        guard let _ = (scene as? UIWindowScene) else { return }
+////        // 미리 선언되어있던 window 프로퍼티에 휴대폰의 크기를 가져와 window를 생성해 할당해줍니다.
+////        window = UIWindow(frame: UIScreen.main.bounds)
+////
+////        // window의 루트뷰에 실제로 앱 실행 시에 보여질 ViewController를 NavigationController의 루트뷰로 넣어줍니다.
+////        window?.rootViewController = LoginVC()
+////
+////        // 이 window가 실제로 보이도록 설정해줍니다.
+////        window?.makeKeyAndVisible()
+////
+////        // 우리가 만든 윈도우씬을 실제 윈도우 씬에 넣어줍니다.
+////        window?.windowScene = windowScene
+//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+//               window?.windowScene = windowScene
+//               window?.rootViewController = LoginVC()
+//               window?.makeKeyAndVisible()
+//
+//        guard let _ = (scene as? UIWindowScene) else { return }
+//
+//        let vc = LoginVC()
+//        if let windowScene = scene as? UIWindowScene {
+//            self.window = UIWindow(windowScene: windowScene)
+//            self.window?.rootViewController = vc
+//            self.window?.makeKeyAndVisible()
+            
         
     }
     
@@ -62,6 +86,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
-
 }
-

@@ -13,7 +13,9 @@ class qnaDetailCell: UITableViewCell {
     @IBOutlet weak var tagText: UILabel!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var tagImg: UIImageView!
-    @IBOutlet weak var QImgThumb: UIImageView!
+    //문답별이미지적용
+    @IBOutlet weak var color: UIView!
+    @IBOutlet weak var QsImg: UIImageView!
     
     static let identifier = "qnaDetailCell"
     static func nib()-> UINib{
@@ -24,12 +26,17 @@ class qnaDetailCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setupLayout()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
+    
+    func setupLayout() {
+        color.layer.cornerRadius = 6
+        color.layer.masksToBounds = true
+      }
     
 }

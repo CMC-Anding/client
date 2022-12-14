@@ -1,16 +1,46 @@
 PODS:
   - Alamofire (5.6.2)
+  - IQKeyboardManagerSwift (6.5.10)
+  - Kingfisher (7.4.1)
+  - Pageboy (3.7.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - Tabman (2.13.0):
+    - Pageboy (~> 3.7.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
+  - Tabman (~> 2.13)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Pageboy
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  Pageboy: fe646118f7168960058bea7a96038386aa7c0da8
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Tabman: 66ea44c44488327ec20f3c8dc5554a5d22f5908c
 
-PODFILE CHECKSUM: 1e14b4f46dcd4ecb309c92abb9480a4630abf000
+PODFILE CHECKSUM: 4cce0e775f94f3ee672e9c8a7fed09e003e48a33
 
 COCOAPODS: 1.11.3
