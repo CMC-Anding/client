@@ -24,6 +24,10 @@ extension UIView{
         self.layer.cornerRadius = 12
     }
     
+    func cournerRound6(){
+        self.layer.cornerRadius = 6
+    }
+    
     func bgColorGray(){
         self.backgroundColor = UIColor(argb:0x3E4048)
     }
@@ -31,4 +35,6 @@ extension UIView{
     func mainColorPurple(){
         self.backgroundColor = UIColor(argb:0x7E73FF)
     }
+    
+    
 }

@@ -82,6 +82,10 @@ class SignUp1VC: UIViewController, UITextFieldDelegate  {
         self.changePwCheckTextColor()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+           self.view.endEditing(true)
+    }
+    
     @IBAction func escBtn(_ sender: UIButton) {
         
         guard let vc = self.presentingViewController as? LoginVC else {

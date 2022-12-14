@@ -8,5 +8,10 @@ target 'Anding' do
   # Pods for Anding
 
 pod 'Alamofire', '~> 5.5'
+pod 'RxSwift', '6.5.0'
+pod 'RxCocoa', '6.5.0'
+pod 'Kingfisher'
+pod 'Tabman', '~> 2.13'
+pod 'IQKeyboardManagerSwift'
 
 end
